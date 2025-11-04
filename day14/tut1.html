@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>SI Program</h1>
+
+    p amount 
+    <br>
+
+    <input type="text" id="A" placeholder="p--amount">
+
+ R amount 
+    <br>
+
+    <input type="text" id="B" placeholder="r--amount">
+
+     T amount 
+    <br>
+
+    <input type="text" id="C" placeholder="t--amount">
+
+    <br>
+
+    <input type="submit" onclick="abc()">
+
+<script>
+
+
+    function abc(){
+
+
+
+         var p = document.getElementById("A").value;
+
+         var r = document.getElementById("B").value;
+
+
+         var t = document.getElementById("C").value;
+
+
+         var si = parseInt(p)*parseInt(r)*parseInt(t)/100;
+
+         document.write('si resul',si);
+
+
+
+
+
+
+
+
+    }
+</script>
+</body>
+</html>

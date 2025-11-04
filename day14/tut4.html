@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="abc()">
+    <div id="box">
+
+    </div>
+
+
+
+
+    <script>
+
+        function abc(){
+
+
+            var box = document.getElementById('box');
+
+            box.style.height = '100px';
+
+            box.style.width ="100px";
+
+            box.style.borderLeft = '75px solid  red';
+            
+            box.style.borderRight = '75px solid  blue';
+            
+            box.style.borderTop = '75px solid  yellow';
+            
+            box.style.borderBottom = '75px solid  green';
+        
+
+            box.style.borderRadius="50px";
+            box.style.backgroudColor='blue';
+
+        }
+    </script>
+</body>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Center Box</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eee;
+        }
+        #box {
+            width: 200px;
+            height: 200px;
+            border: 5px solid rgb(16, 56, 141); /* default border */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body onload="abc()">
+    <div id="box"></div>
+
+    <script>
+        function abc() {
+            var box = document.getElementById("box"); // ✅ fixed 'doument' to 'document'
+
+            // ✅ removed extra slashes (/) and fixed CSS syntax
+            box.style.borderLeft = '5px solid red';
+            box.style.borderRight = '5px solid blue';
+            box.style.borderTop = '5px solid yellow';
+            box.style.borderBottom = '5px solid green';
+        }
+    </script> -->

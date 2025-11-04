@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circ</title>
+  <style>
+    #box {
+      border-radius: 50%;
+      margin-top: 20px;
+      background-color: gray;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h3>Enter your height</h3>
+  <input type="text" id="A" placeholder="Enter height (e.g. 200px)">
+  <br><br>
+
+  <h3>Enter your width</h3>
+  <input type="text" id="B" placeholder="Enter width (e.g. 200px)">
+  <br><br>
+
+  <h3>Choose a color</h3>
+  <input type="color" id="C">
+  <br><br>
+
+  <input type="submit" onclick="abc()" value=" Circle">
+
+  <div id="box"></div>
+
+  <script>
+    function abc() {
+      // values le lo
+      var p = document.getElementById("A").value;
+      var w = document.getElementById("B").value;
+      var r = document.getElementById("C").value;
+
+      // box element pakdo
+      var box = document.getElementById("box");
+
+      // agar px nahi diya to automatic px lagaye
+      if (!p.endsWith("px")) p += "px";
+      if (!w.endsWith("px")) w += "px";
+
+   
+      box.style.height = p;
+      box.style.width = w;
+      box.style.backgroundColor = r;
+      box.style.borderRadius = "90%"; 
+    }
+  </script>
+</body>
+</html>
